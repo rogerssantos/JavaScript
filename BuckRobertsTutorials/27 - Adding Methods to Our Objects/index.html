@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "html://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <script type="text/javascript">
+        
+        function people(name, age){
+            this.name = name;
+            this.age = age;
+            this.yearsUntilRetire = yearsLeft;
+        }
+        
+        var natalie = new people("Natalie Portman", 28);
+        var roger = new people("Roger Santos", 22);
+        
+        function yearsLeft(){
+            var numYears = 65 - this.age;
+            return numYears;
+        }
+        
+    </script>
+</head>
+    <body>
+        
+        <script type="text/javascript">
+            document.write(natalie.yearsUntilRetire());
+            document.write("<br />")
+            document.write(roger.yearsUntilRetire());
+        </script>
+    </body>
+</html>
