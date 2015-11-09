@@ -10,9 +10,15 @@
         
         <script type="text/javascript">
             
-            var people = new Array("Roger", "Bucky", "And so on...");
+            var bp = new Array("Leg", "Hand", "Head", "Knees");
             
-            document.write(people[2]);
+            bp.reverse();
+            bp.push("Tongue", "Forehead");
+            bp.sort();
+            
+            document.write("<br />");
+            var string1 = bp.join();
+            document.write(string1);
             
         </script>
         

@@ -10,9 +10,19 @@
         
         <script type="text/javascript">
             
-            var people = new Array("Roger", "Bucky", "And so on...");
+            var movies = new Array("Avatar", "Good Will Hunting", "Fight Club", "Vanilla Sky");
             
-            document.write(people[2]);
+            var string1 = movies.join(" - ");
+            
+            document.write(string1);
+            
+            document.write("<br />");
+            
+            document.write(movies[3] + "<br />");
+            
+            movies.pop();
+            
+            document.write(movies[3] + "<br />");
             
         </script>
         
